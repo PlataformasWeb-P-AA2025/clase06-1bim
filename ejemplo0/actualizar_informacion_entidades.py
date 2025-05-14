@@ -48,7 +48,7 @@ informacion = cursor.fetchall()
 # se realiza un ciclo repetitivo para recorrer la secuencia de información
 # resultante
 for d in informacion:
-    print("%s - %s - %s - %d" % (d[0], d[1], d[2], d[3]))
+    print("%s - %s - %s - %s - %d" % (d[0], d[1], d[2], d[3], d[4]))
 
 print("-------------------------------------------------")
 # inicio proceso de actualización
@@ -67,7 +67,7 @@ informacion = cursor.fetchall()
 # se realiza un ciclo repetitivo para recorrer la secuencia de información
 # resultante
 for d in informacion:
-    print("%s - %s - %s - %d" % (d[0], d[1], d[2], d[3]))
+    print("%s - %s - %s - %s - %d" % (d[0], d[1], d[2], d[3], d[4]))
 
 
 # cerrar el enlace a la base de datos (recomendado)

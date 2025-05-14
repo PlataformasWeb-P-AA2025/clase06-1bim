@@ -15,8 +15,15 @@ cursor = conn.cursor()
 # Crear una tabla denominada Autor
 # con atributos: nombre, apellido, cedula, edad
 
-cadena_sql = 'CREATE TABLE Autor (nombre TEXT, apellido TEXT, cedula TEXT, \
-            edad INTEGER)'
+cadena_sql = """
+            CREATE TABLE Autor (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nombre TEXT,
+                apellido TEXT,
+                cedula TEXT, 
+                edad INTEGER
+            )
+"""
 
 # ejecutar el SQL
 cursor.execute(cadena_sql)
